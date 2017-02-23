@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icon.png</file>
+        <file>pencil_icon&amp;48.png</file>
+        <file>pencil_icon&amp;16.png</file>
+    </qresource>
+    <qresource prefix="/css">
+        <file>gui_win.css</file>
+    </qresource>
+</RCC>

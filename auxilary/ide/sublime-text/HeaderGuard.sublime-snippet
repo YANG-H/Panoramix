@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+#ifndef ${TM_FILEPATH/(([A-Za-z]+)\/src\/)|./\U(?1:$2_)\E/g}${TM_FILEPATH/(\/src\/([A-Za-z]+))|./\U(?1:$2_)\E/g}${TM_FILENAME/(([A-Z])([A-Z][a-z]))|(([a-z])([A-Z]))|([a-z])|(\.)/\U(?1:$2_$3)(?4:$5_$6)$7(?8:_)\E/g}
+#define ${TM_FILEPATH/(([A-Za-z]+)\/src\/)|./\U(?1:$2_)\E/g}${TM_FILEPATH/(\/src\/([A-Za-z]+))|./\U(?1:$2_)\E/g}${TM_FILENAME/(([A-Z])([A-Z][a-z]))|(([a-z])([A-Z]))|([a-z])|(\.)/\U(?1:$2_$3)(?4:$5_$6)$7(?8:_)\E/g}
+ 
+$0
+ 
+#endif
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>guard</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+	<scope>source.c</scope>
+	<description>Generate C/C++ header guardians</description>
+</snippet>

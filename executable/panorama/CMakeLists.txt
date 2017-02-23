@@ -1,0 +1,6 @@
+file (GLOB SOURCES "." *.cpp *.hpp)
+source_group("Sources" FILES ${SOURCES})
+include_directories (${DEPENDENCY_INCLUDES})
+panoramix_add_executable (Panorama ${SOURCES})
+target_link_libraries (Panorama Panoramix ${DEPENDENCY_LIBS})
+set_property(TARGET Panorama PROPERTY FOLDER "Panoramix.Executable")

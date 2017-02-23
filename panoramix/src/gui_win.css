@@ -1,0 +1,44 @@
+QMenuBar {
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 lightgrey, stop:1 transparent);
+}
+QMenuBar::item {
+	padding: 1px 7px;
+	background-color: transparent;
+}
+QMenuBar::item:selected {
+    color: white;
+	background-color: rgba(100, 100, 255, 255);
+    border-radius: 3px;
+}
+QMenuBar::item:pressed {
+    color: white;
+	background: rgba(100, 100, 255, 255);
+	border-radius: 3px, 3px, 0, 0;
+}
+QMenu {
+	background-color: #323232;
+	color: white;
+	border: 1px solid black;
+} 
+QMenu::item {
+	background-color: transparent;
+} 
+QMenu::item:selected { 
+	background-color: #777777;
+}
+QMenu::item:checked {
+	background-color: #456789
+}
+QStatusBar {
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 transparent, stop:1 lightgrey);
+	color: #DDDDDD
+}
+QDialog {
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,stop:0 white, stop:1 lightgrey); 
+}
+QScrollBar:horizontal {
+	height: 20px; 
+}
+QScrollBar:vertical {
+	width: 20px; 
+}

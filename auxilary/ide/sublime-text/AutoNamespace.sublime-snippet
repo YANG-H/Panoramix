@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+namespace ${TM_FILEPATH/(([A-Za-z]+)\/src\/)|./\L(?1:$2 \{)\E/g}
+    namespace ${TM_FILEPATH/(\/src\/([A-Za-z]+))|./\L(?1:$2 \{)\E/g}
+ 
+        $0
+ 
+    }
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>autons</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+	<scope>source.c</scope>
+	<description>Generate namespaces automatically</description>
+</snippet>

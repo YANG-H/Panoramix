@@ -1,0 +1,33 @@
+				vpdetection
+	To detect vanishing point using jlinkage+lsd, or more precisely, group line segments by their
+corresponding vanishing point(vp).
+
+REFERENCE:
+(If you find this project helpful, please cite the four papers below, thank you!)
+
+   1. Toldo, R. and Fusiello, A. (2008). Robust multiple structures estimation with J-Linkage. European Conference on Computer Vision(ECCV), 2008.
+   2. Tardif J.-P., Non-iterative Approach for Fast and Accurate Vanishing Point Detection, 12th IEEE International Conference on Computer Vision, Kyoto, Japan, September 27 - October 4, 2009.
+   3. Grompone, G., Jakubowicz, J., Morel, J. and Randall, G. (2010). LSD: A Fast Line Segment Detector with a False Detection Control. IEEE Transactions on Pattern Analysis and Machine Intelligence, 32, 722.
+   4. Chen Feng, Fei Deng, Vineet R. Kamat. Semi-automatic 3D Reconstruction of Piecewise Planar Building Models From Single Image. The 10th International Conference on Construction Applications of Virtual Reality, 2010. 
+
+INSTALL:
+
+1. Download Source
+	hg clone https://vpdetection.googlecode.com/hg/ vpdetection
+
+2. If you are using Win32+Matlab2010, all binary is within this folder, just go into the matlab folder
+and
+>run
+enjoy it!
+
+3. If you are using linux+Matlab, please stay in the main folder and
+>install
+enjoy it!
+
+USAGE
+	see vpdetection.m
+
+2011-05-08 3:10 pm	
+Chen Feng
+simbaforrest[at]gmail[dot]com
+http://www.umich.edu/~cforrest
